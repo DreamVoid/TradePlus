@@ -83,9 +83,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.WesJD.AnvilGUI</groupId>
+            <groupId>net.wesjd</groupId>
             <artifactId>anvilgui</artifactId>
-            <version>478e0c196e</version>
+            <version>1.9.4-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
 
@@ -99,7 +99,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.20</version>
+            <version>1.18.32</version>
             <scope>provided</scope>
         </dependency>
 
@@ -217,8 +217,8 @@
         <plugins>
             <plugin>
                 <groupId>org.projectlombok</groupId>
-                <artifactId>lombok-maven-plugin</artifactId>
-                <version>1.18.12.0</version>
+                <artifactId>lombok</artifactId>
+                <version>1.18.32</version>
                 <executions>
                     <execution>
                         <phase>generate-sources</phase>
@@ -231,15 +231,15 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.2</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.5.2</version>
                 <executions>
                     <execution>
                         <phase>package</phase>

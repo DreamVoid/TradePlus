@@ -8,6 +8,7 @@ import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.meta.SkullMeta;
 
@@ -52,7 +53,9 @@ public class ItemFactory {
       }
 
       if (data > 0) {
-        this.stack = new ItemStack(mat, 1, data, data);
+          ItemStack s = new ItemStack(mat, 1);
+          s.setDurability(data);
+        this.stack = s;
       } else {
         this.stack = new ItemStack(mat);
       }

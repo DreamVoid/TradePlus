@@ -16,8 +16,8 @@ public class Sounds {
 
   static {
     String[] split =
-        Bukkit.getServer().getClass().getPackage().getName().split("\\.")[3].split("_");
-    version = Integer.parseInt(split[0].replace("v", "") + split[1]);
+            Bukkit.getBukkitVersion().split("-")[0].split("\\.");
+    version = Integer.parseInt(split[0] + split[1]);
 //    System.out.println("You appear to be running version " + version);
   }
 
